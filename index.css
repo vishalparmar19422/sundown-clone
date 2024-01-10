@@ -100,6 +100,7 @@ nav img {
   width: 100%;
   margin-top: 75px;
   border-radius: 30px;
+  position: relative;
 }
 .anime1{
   position: absolute;
@@ -110,7 +111,6 @@ nav img {
   top: 700px;
   filter: blur(20px);
   border-radius: 40%;
-  z-index: -1;
  
 }
 .anime2{
@@ -127,7 +127,6 @@ nav img {
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  z-index: -1;
 
 
 }
@@ -145,7 +144,6 @@ nav img {
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
-  z-index: -1;
 
 
 }
