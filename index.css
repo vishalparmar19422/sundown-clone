@@ -16,9 +16,8 @@ body {
 }
 .page1 {
   width: 100%;
-  min-height: 700vh;
+  min-height: 100vh;
   background: #efeae3;
-  position: relative;
   padding: 0 45px;
   z-index: -100;
   
