@@ -182,8 +182,10 @@ nav img {
 .moving-text{
   white-space: nowrap;
   overflow-x: auto;
-  scrollbar-width: none;
  
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 .con{
@@ -192,6 +194,7 @@ nav img {
   animation-duration: 9s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 
 }
 .gola{
@@ -263,18 +266,68 @@ width: 350px;
   animation-direction: alternate;
 }
 
-.page3{
-  width:100%;
-  height: 100vh;
-  background-color: #EFEAE3;
-}
+
 
 @keyframes circle-animation {
   from{
-    transform:translate(10%,-10%)skew(0);
+    transform:translate(10%,-10%)skew(8deg);
   }
   to{
-    transform:translate(-10%,10%) skew(-15deg);
+    transform:translate(-10%,10%) skew(-10deg);
 
   }
+}
+.page3{
+  width:100%;
+  min-height: 100vh;
+  background-color: #EFEAE3;
+  padding-top: 150px;
+}
+.first-line{
+  width:100%;
+  height:140px;
+  display: flex;
+  align-items:center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: solid 1px black;
+}
+
+.first-line h2{
+  font-weight: 100;
+  font-size: 60px;
+  padding: 0 30px;
+  position: relative;
+  z-index: 100;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  background-color: #FF9831 ;
+  top:-100%;
+  transition: all ease 0.3s;
+}
+
+.first-line:hover .overlay{
+top:0;
+
+}
+.fixed-img{
+  position:fixed;
+  width: 24vw;
+  height:28vw;
+  background-color: #ff3c00;
+  border-radius: 15px;
+  top:30%;
+  left: 50%;
+  z-index: 99;
+  display: none;
+}
+
+.fixed-bgimage{
+background-image: url("assets/first.webp");
+background-position:center;
+background-size: cover;
+background-repeat: no-repeat;
 }
