@@ -317,7 +317,7 @@ top:0;
   position:fixed;
   width: 24vw;
   height:28vw;
-  background-color: #ff3c00;
+  background-color: #EFEAE3;
   border-radius: 15px;
   top:30%;
   left: 50%;
@@ -326,7 +326,6 @@ top:0;
 }
 
 .fixed-bgimage{
-background-image: url("assets/first.webp");
 background-position:center;
 background-size: cover;
 background-repeat: no-repeat;
