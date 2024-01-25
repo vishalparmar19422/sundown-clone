@@ -330,3 +330,34 @@ background-position:center;
 background-size: cover;
 background-repeat: no-repeat;
 }
+
+.page4{
+  height: 60vh;
+  width:100%;
+  background-color: #EFEAE3;
+}
+.page5{
+
+  height: 100vh;
+  width:100%;
+}
+#main{
+  /* background-color: black; */
+  position: relative;
+  z-index: 10;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: fixed;
+  height: 100vh;
+  width:100%;
+  z-index: 9;
+  bottom: 0;
+  color: white;
+  background-color: black;
+}
+.footer h1{
+  font-size: 24vw;
+}
