@@ -347,9 +347,11 @@ background-repeat: no-repeat;
   z-index: 10;
 }
 .footer{
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   height: 100vh;
   width:100%;
@@ -360,4 +362,139 @@ background-repeat: no-repeat;
 }
 .footer h1{
   font-size: 24vw;
+  margin: 0;
+}
+.upper{
+  filter: blur(50px);
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between  ;
+  background-color: orangered;
+
+
+
+
+}
+.lower1{
+  filter: blur(100px);
+  width: 500px;
+  height: 500px;
+  background-color: orangered;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius:100%;
+  animation-name: lower1-anime;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
+}
+
+
+
+.lower2{
+  width: 500px;
+  height: 300px;
+  background-color: orangered;
+  animation-name: lower2-anime;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-bottom-left-radius:100%;
+}
+.lower3{
+  filter: blur(100px);
+  width: 500px;
+  height: 500px;
+  background-color: orangered;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius:100%;
+  animation-name: lower3-anime;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes lower1-anime{
+  from{
+    transform: translate(-100px, -100px);
+
+  }
+  to{
+    transform: translate(0, 130px);
+  }
+}
+@keyframes lower2-anime{
+  from{
+    transform: translate(0, -100px);
+
+  }
+  to{
+    transform: translate(300px, 130px);
+  }
+}
+@keyframes lower3-anime{
+  from{
+    transform: translate(100px, -100px);
+
+  }
+  to{
+    transform: translate(0, 130px);
+  }
+}
+.lower-footer{
+  width:97%;
+  height: 100px;
+  border-top: solid 1px rgb(190, 187, 187);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.two-in-one{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center   ;
+  width: 100%;
+  height: 500px;
+  z-index: 10;
+
+
+
+}
+.one-left{
+  height: 100px;
+width: 50%;
+text-align: left;
+font-size: 25px;
+padding-left: 100px;
+
+
+
+}
+.one-right{
+  height: 100px;
+  padding-left: 500px;
+width: 50%;
+  
+}
+
+.one-right input{
+  margin-top: 30px;
+  width: 350px;
+  height:50px;
+  border:none;
+  background: none;
+  border-bottom: solid rgb(175, 170, 170) 1px;
+  font-size:20px;
+  color: white;
+ 
 }
