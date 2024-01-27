@@ -332,10 +332,33 @@ background-repeat: no-repeat;
 }
 
 .page4{
-  height: 60vh;
+  height: 70vh;
   width:100%;
   background-color: #EFEAE3;
+  padding: 10vw 2vw;
 }
+.page4 h2{
+  font-size:20px;
+  width: 400px;
+  font-weight: 100;
+  text-align: left;
+padding-left: 20px;
+}
+svg{
+padding-left: 20px;
+
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+  border-left: solid 1px #979797;
+  
+}
+
 .page5{
 
   height: 100vh;
@@ -498,3 +521,4 @@ width: 50%;
   color: white;
  
 }
+
